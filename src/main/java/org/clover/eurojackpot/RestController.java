@@ -29,7 +29,6 @@ public class RestController {
                 .values().stream()
                 .map(group -> String.join(DELIMITER, group))
                 .collect(Collectors.joining("<br>"));
-//        String result = combos.stream().map(WinningCombination::toString).collect(Collectors.joining(DELIMITER));
 
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
