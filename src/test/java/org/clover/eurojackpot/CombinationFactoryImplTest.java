@@ -20,23 +20,4 @@ class CombinationFactoryImplTest {
             Assertions.assertTrue(winningCombination.getNumberAdditional2() >= 1 && winningCombination.getNumberAdditional2() <= 12);
         }
     }
-
-//    @Test
-//    @Ignore("manual")
-//    void bruteForce() {
-//        factory = new CombinationFactoryImpl();
-//        int currentTry = 0;
-//
-//        List<Integer> mainNumbers = List.of(4, 10, 11, 20, 22);
-//        List<Integer> additionalNumbers = List.of(7, 10);
-//        WinningCombination trueWinningCombination = new WinningCombination(mainNumbers, additionalNumbers);
-//        WinningCombination attempt = factory.createCombination();
-//        while (!trueWinningCombination.equals(attempt)) {
-//            ++currentTry;
-//            System.out.println("Attempt: " + currentTry + ", " + attempt);
-//            attempt = factory.createCombination();
-//        }
-//
-//    }
-
 }
